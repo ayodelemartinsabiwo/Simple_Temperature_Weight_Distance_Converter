@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Converter</title>
+    <link rel="stylesheet" href="style_convert.css">
+    <script src="script_convert.js" ></script>
+</head>
+<body>
+    <section id="home">
+        <header>Unit Conversions</header>
+            <nav>
+                <div class="topdiv">
+                    <a href="#temperature" ><button class="topmenu">Temperature</button></a>
+                    <a href="#weight"><button class="topmenu">Weight</button></a>
+                    <a href="#distance"><button class="topmenu">Distance</button></a>
+                </div>
+            </nav>
+    </section>
+
+    <div id="all-conversion-sections">
+        <!-- This will have the conversion sections for Temperature, Weight, and Distance -->
+
+        <section id="temperature" class="b temperature">
+            <!--Temperature conversion section -->
+            <div id="tmp">
+                <figure>
+                    <!-- Figure and its caption will come here -->
+                    <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-CD0101EN-SkillsNetwork/labs/Theia%20Labs/02%20-%20HTML5%20Elements/images/thermo.png" width="150px"/>
+                    <figcaption>Celsius to Fahrenheit Conversion</figcaption>
+                </figure>
+                <article>
+                    <fieldset>
+                        <legend>Temperature</legend>
+                        <label for="Temperature">Celcius</label></br>
+                        <input type="number" id="c"></br><br>
+
+                        <button id="temperature" class="con" onclick="temp()"> Convert </button></br><br>
+
+                        <input type="number" id="f"></br>
+                        <label for="Temperature">Fahrenheit</label>
+                    </fieldset>
+                </article>
+                <aside>
+                    To convert celsuis to fahrenheit yourself, use this formula replacing the `C` with your temperature in celsuis: (C × 9/5) + 32
+                </aside>
+            </div>
+        </section>
+
+        <section id="weight" class="b weight">
+            <!--Temperature conversion section -->
+            <div id="wgt">
+                <figure>
+                    <!-- Figure and its caption will come here -->
+                    <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-CD0101EN-SkillsNetwork/labs/Theia%20Labs/02%20-%20HTML5%20Elements/images/weight.png" width="150px"/>
+                    <figcaption>Kilograms to Pounds Conversion</figcaption>
+                </figure>
+                <article>
+                    <fieldset>
+                        <legend>Weight</legend>
+                        <label for="Weight">Kilograms</label> <br/>
+                        <input type="number" id="kg"> <br/><br>
+                        <!-- Label for Temperature output -->
+
+                        <button id="weight" class="con" onclick="weight()"> Convert </button></br><br>
+                        <input type="number" id="p"> <br/>
+                        <label for="Weight">Pounds</label>
+                    </fieldset>
+                </article>
+                <aside>
+                    To convert kilograms to pounds yourself, use this formula replacing the `kg` with your weight in kilograms: kg x 2.205
+                </aside>
+            </div>
+
+        </section>
+
+        <section id="distance" class="b distance">
+            <!--Temperature conversion section -->
+            <div id="dst">
+                <figure>
+                    <!-- Figure and its caption will come here -->
+                    <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-CD0101EN-SkillsNetwork/labs/Theia%20Labs/02%20-%20HTML5%20Elements/images/speedo.png" width="150px"/>
+                    <figcaption>Kilometer to Mile Conversion</figcaption>
+                </figure>
+                <article>
+                    <fieldset>
+                        <legend>Distance</legend>
+                        <label for="Distance">Kilometer</label> <br>
+                        <input type="number" id="km"> <br><br>
+                        <!-- Label for Temperature output -->
+                        <button id="distance" class="con" onclick="dist()"> Convert </button><br/><br>
+                        <input type="number" id="ml"> <br/>
+                        <label for="Distance">Miles</label>
+                    </fieldset>
+                </article>
+                <aside>
+                    To convert kilometers to miles yourself, use this formula replacing the `km` with your distance in kilometers: km & divide; 1.609
+                </aside>
+            </div>
+
+        </section>
+        <!-- <div style="clear:both;"></div> -->
+    </div>
+    <p></p>
+    <hr>
+    <div id="go-home" class="iconbutton">
+        <a href="#home">
+            <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-CD0101EN-SkillsNetwork/labs/Theia%20Labs/02%20-%20HTML5%20Elements/images/home.svg"/>
+        </a>
+    </div>
+
+    <footer>Learn more about HTML as a part of the IBM Fullstack Cloud Developer Certification</footer>
+
+</body>
+</html>
