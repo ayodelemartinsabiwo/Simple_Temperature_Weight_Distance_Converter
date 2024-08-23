@@ -63,7 +63,7 @@ git clone https://github.com/yourusername/unit-converter-web-app.git
 ```
 
 2. **Open the Project:**
-   - Navigate to the project folder and open the `index.html` file in a web browser. The app should run locally and display the conversion interface.
+   - Navigate to the project folder and open the `converter.html` file in a web browser. The app should run locally and display the conversion interface.
 
 ## Future Enhancements
 
