@@ -32,12 +32,14 @@ function dist() {
 }
 
 function inputbkg() {
-    // var gi = document.getElementsByClassName("outp")
-    // var gi = document.getElementsByClassName("outp")
+    // accessing only single attribute
+    // var gi = document.getElementsById("f")
     // var value = parseInt(gi.value.trim());
     // if (value > 40) {
     //     gi.style.backgroundColor = "lightgreen";
     // }
+
+    //accessing multiple attributes by class
     var gi = document.getElementsByClassName("outp")
     for(var i = 0; i <= gi.length; i++) {
         var value = parseInt(gi[i].value.trim());
