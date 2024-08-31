@@ -45,6 +45,8 @@ function inputbkg() {
         var value = parseInt(gi[i].value.trim());
         if (value > 40) {
             gi[i].style.backgroundColor = "lightblue";
+        } else {
+            gi[i].style.backgroundColor = "white";
         }
 
 
